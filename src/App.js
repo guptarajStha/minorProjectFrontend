@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { BrowserRouter as Browser } from "react-router-dom";
+import Pages from "./Pages/Pages";
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex w-[100vw] h-[100vh] justify-center content-center items-center text-center bg-gray-300">
+      <Browser>
+        <Pages />
+      </Browser>
     </div>
   );
 }
